@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event | NSS UIET</title>
+    <!--logo link  -->
+    <link rel="icon" type="image/ico" href="pic/nss logo.png" />
+         <!-- bootstrap4 -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="front.css">
+        
+         <!-- font awesome -->
+         <script src="https://kit.fontawesome.com/4e97e8c0bc.js" crossorigin="anonymous"></script>
+
+         <!-- adding jquery -->
+         <script src="compress.js" ></script>
+         
+        
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+        font-family: Helvetica, sans-serif;
+        background-image: url("pic/event/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+            background-position:top center ;
+ }
+
+/* The actual timeline (the vertical ruler) */
+.timeline11 {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline11::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container11 {
+  padding: 35px 65.5px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container11::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -50px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* Place the container to the left */
+.left11 {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right11 {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left11::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50px;
+  width: 0;
+  z-index: 1;
+  right: 55px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right11::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 50px;
+  width: 0;
+  z-index: 1;
+  left: 55px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right11::after {
+  left: -50px;
+}
+
+/* The actual content */
+.content11 {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline11::after {
+  left: 60px;
+  }
+  
+  /* Full-width containers */
+  .container11 {
+  width: 100%;
+  padding-left: 121px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container11::before {
+  left: 110px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left11::after, .right11::after {
+  left: 10px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right11 {
+  left: 0%;
+  }
+
+ 
+}
+.events11 {
+  width: 100%;
+  height: 130px;
+  text-align: center; 
+   background-image: url('pic/banner.jpg')  ;
+   background-size: 100%;   
+   background-repeat: no-repeat;
+ border-bottom: rgb(248, 250, 143) solid 5px;
+          border-radius:20px;
+
+}
+
+
+  
+
+       
+
+
+@media  (min-width: 700px) {
+.backgroundImageUIET{
+   background-size: 100% 100%;
+   padding-bottom: 20px;
+  background-image:url('pic/event/background.jpeg');
+  background-repeat: no-repeat; 
+   background-attachment: fixed;
+    width:100%;
+   height:100%;
+}
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+  <nav id="grad" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top  " style="padding-top: 0;">
+    <a class="navbar-brand uiet-kuk-logo"href="http://www.uietkuk.ac.in/"> <img style="margin-top: 8px;" src="pic/nss logo.png " > NSS UIET KURUKSHETRA </a>
+    <button style="  border-radius: 10px;  " class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <span  > <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+      </span>
+   </button>  
+    <div class="collapse navbar-collapse  " id="navbarNavDropdown" style="margin-top: 8px; margin-right: 10px; margin-left: 10px;" >
+      <ul  class="nav navbar-nav  flex-row nav-fill "  style="font-size: 16px; flex-wrap:  wrap;justify-content:space-between  " >
+        
+        <li class="nav-item active  " style="margin-right: 5px; ">
+          <a  class=" nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a>
+        </li>
+           <li  class="nav-item active dropdown jjj"  >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Get Involved
+          </a>
+          <div class="dropdown-menu" style="background-color: black; opacity: 80%;   border-radius: 15px; position: absolute; " >
+            <a class="dropdown-item jjj" href="kuk.html">About KUK</a>
+            <a class="dropdown-item jjj" href="uiet.html">About UIET</a>
+            <a class="dropdown-item jjj" href="nss.html">About NSS</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item jjj" href="registration.html">Registration</a>
+          </div>
+        </li>
+        <li class="nav-item active jjj " >
+          <a class="nav-link " href="index.html#faculty1" >Faculties</a>
+        </li>
+        <li class="nav-item active jjj background-color: #aa0b00; border-radius: 15px;">
+          <a class="nav-link" href="">Events</a>
+        </li>
+        <li class="nav-item active jjj" >
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active jjj" >
+          <a class="nav-link" href="think.html">Think-Thank</a>
+        </li>
+        <li class="nav-item active jjj" >
+          <a class="nav-link" href="check.html">Check-Hours</a>
+        </li>
+        <li class="nav-item active jjj">
+          <a class="nav-link" href="donate.html">Blood Request</a>
+        </li>
+      </ul>
+    </div> 
+  </nav>
+      <!-- gren div -->
+      <div class="header" >
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+
+  
+
+  
+<!-- event bar -->
+<div class="events11" >
+  <h3 style="padding-top: 21px; font-size: 90px;" >EVENTS</h3>
+</div>
+<div class="backgroundImageUIET">  
+
+ 
+
+<div class="timeline11">
+
+  <div class="container11 left11">
+        <div class="content11" >
+      <h2>Republic Day Celebration</h2>
+      <p >On the auspicious occassion on 71th Republic day, being children of our motherland India we celebrated our independence with great patriotism.</p style="color: black;">
+    </div>
+  </div>
+  <div class="container11 right11">
+    <div class="content11">
+      <h2>Self Defense Workshop 2020</h2>
+      <p>
+        “Self-defense is not just a set of techniques; it’s a state of mind, and it begins with the belief that you are worth defending.”-Rorion Gracie
+        NSS UIET KUK organized a “Self defense” workshop at UIET, KUK on 17th February, 2019. The workshop was primarily set up for girls from classes. The workshop included various exercises and drills. The instructor also described various instances of threat and how they could tackle it.</p>
+    </div>
+  </div>
+  <div class="container11 left11">
+    <div class="content11">
+      <h2>Plantation Drive</h2>
+      <p>Plants are yet another form of life which suffer itself to rejuvenates life in other living creatures. With the responsibility of protecting them as well as other forms a plantation drive was conducted by NSS UIET KUK to plant more and more trees.</p>
+    </div>
+  </div>
+  <div class="container11 right11">
+    <div class="content11">
+      <h2>Blood Donation 2019</h2>
+      <p>Let's speak in louder voice, Blood-donation make our choice. Let's follow our heart and give life to someone's heart and smile to many.!</p>
+    </div>
+  </div>
+  <div class="container11 left11">
+    <div class="content11">
+      <h2>Yoga Session</h2>
+      <p>Yoga helps us in developing physical, mental and intellectual personality. It also makes us strong and peaceful so NSS UIET KUK organized a yoga session in girls and boys hostel for one week.</p>
+    </div>
+  </div>
+  <div class="container11 right11">
+    <div class="content11">
+      <h2>Clean India</h2>
+      <p>Adhering to the principle of father Gandhi's idea of Swatcha Bharat has motivated us. Our practices are to promote proper sanitaion and maintain a sense of swatchta throughout the campus.</p>
+    </div>
+  </div>
+  <div class="container11 left11">
+    <div class="content11">
+      <h2>Village Meet  2019</h2>
+      <p>
+        Our NSS family headed towards the village to light up hopes among the people of village. The people were briefly introduced about the function of NSS and how it would help them in moving forward towards a bright tomorrow.</p>
+    </div>
+  </div>
+
+  <div class="container11 right11">
+    <div class="content11">
+      <h2> Election Awareness  2019</h2>
+      <p>
+       
+Volunteers of NSS UIET KUK have conducted an awareness drive in nearby area of our Campus to Promote the Participation of Public in General Elections 2019, With Display of Various Poster and by Personal Approach. This Drive aims to strengthen our Democracy and which will directly impact the development of Nation.</p>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- footer -->
+  <iframe src="footer.html" frameborder="0" style="width: 100%; height:48vh; border:none"></iframe>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+
+
+<script src="event.js" ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
